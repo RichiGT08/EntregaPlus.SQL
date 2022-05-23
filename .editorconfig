@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0006: No se encontró el archivo de metadatos 'C:\Users\User\source\repos\EntregaPlus\EntregaPlus\bin\Debug\netstandard2.0\ref\EntregaPlus.dll'
+dotnet_diagnostic.CS0006.severity = error

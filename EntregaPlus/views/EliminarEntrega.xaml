@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntregaPlus.views.EliminarEntrega">
+    <ContentPage.Content>
+        <StackLayout Margin="0,30,0,0">
+            <Label Text="ELIMINAR ENTREGA"
+                   TextColor="Red"
+                   FontSize="30"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Entry Text="{Binding entrega.Codigo}" Placeholder="codigo"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Entry Text="{Binding entrega.Direccion}" Placeholder="Direccion"
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Entry Text="{Binding entrega.destinatario}" Placeholder="Destinaratio"
+                   HorizontalOptions="FillAndExpand"/>
+            
+            <Entry Text="{Binding entrega.ubicacion}" Placeholder="Ubicacion"
+                   HorizontalOptions="FillAndExpand"/>
+            <Entry Text="{Binding entrega.Estado}" Placeholder="Estado"
+                   HorizontalOptions="FillAndExpand"/>
+            <Entry Text="{Binding entrega.Observacion}" Placeholder="Observacion"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="ELIMINAR" HorizontalOptions="FillAndExpand"
+                    Command="{Binding EliminarEntrega}"
+                    TextColor="Red"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

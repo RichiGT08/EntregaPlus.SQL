@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntregaPlus.Master"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="EntregaPlus" FontAttributes="Bold" FontSize="28" HorizontalTextAlignment="Center"></Label>
+            <Button x:Name="btnRegistro" Text="Registrar Nuevo" BackgroundColor="Wheat" Image="nuevoRegistro.png" Clicked="btnRegistro_Clicked"></Button>
+            <Button x:Name="btnLista" Text="Listar Todo" BackgroundColor="White" Image="nuevoRegistro.png" Clicked="btnLista_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
