@@ -9,12 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace EntregaPlus.views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class InsertarRaza : ContentPage
-    {
-        public InsertarRaza()
-        {
-            InitializeComponent();
-        }
-    }
+
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class InsertarEntrega : ContentPage
+	{
+		public InsertarEntrega()
+		{
+			InitializeComponent();
+		}
+	}
 }

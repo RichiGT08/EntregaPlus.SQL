@@ -2,11 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EntregaPlus.Registro">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text=" creando Nuevo Registro "
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <StackLayout Margin="0,30,0,0">
+        <Image Source="https://play-lh.googleusercontent.com/V57MD-_jKLUWTck60hiIwHp5xkcgcZwOqjK-OZbx2Uis34CspHofURJyDm1m2mfmIgg"></Image>
+        <Button Text="Mostrar" HorizontalOptions="FillAndExpand" BackgroundColor="Yellow"
+                x:Name="btnmostrar"/>
+
+        <Button Text="Crear" HorizontalOptions="FillAndExpand" BackgroundColor="Yellow"
+                x:Name="btnnuevo"/>
+
+
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="Orange">
+            <Label Text="Buscar por código de Entrega: "/>
+            <Entry x:Name="cajacodigo" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Borrar" x:Name="btneliminar" 
+                />
+
+            <Button Text="Modificar" x:Name="btnmodificar" />
         </StackLayout>
-    </ContentPage.Content>
+
+
+    </StackLayout>
+
 </ContentPage>

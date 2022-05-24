@@ -10,11 +10,11 @@ namespace EntregaPlus.Models
     {
         [PrimaryKey]
 
-        public int Codigo { get; set; }
-        public string Direccion { get; set; }
+        public int codigo { get; set; }
+        public string direccion { get; set; }
         public string destinatario { get; set; }
         public string ubicacion { get; set; }
-        public string Estado { get; set; }
-        public string Observacion { get; set; }
+        public string estado { get; set; }
+        public string observacion { get; set; }
     }
 }

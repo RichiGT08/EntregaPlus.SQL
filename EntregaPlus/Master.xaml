@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="EntregaPlus" FontAttributes="Bold" FontSize="28" HorizontalTextAlignment="Center"></Label>
+            <Image Source="https://play-lh.googleusercontent.com/V57MD-_jKLUWTck60hiIwHp5xkcgcZwOqjK-OZbx2Uis34CspHofURJyDm1m2mfmIgg"></Image>
             <Button x:Name="btnRegistro" Text="Registrar Nuevo" BackgroundColor="Wheat" Image="nuevoRegistro.png" Clicked="btnRegistro_Clicked"></Button>
             <Button x:Name="btnLista" Text="Listar Todo" BackgroundColor="White" Image="nuevoRegistro.png" Clicked="btnLista_Clicked"></Button>
         </StackLayout>

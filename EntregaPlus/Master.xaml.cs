@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntregaPlus.views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace EntregaPlus
         private async void btnLista_Clicked(object sender, EventArgs e)
         {
             App.MasterDet.IsPresented = false;
-            await App.MasterDet.Detail.Navigation.PushAsync(new Listar());
+            await App.MasterDet.Detail.Navigation.PushAsync(new EntregasView());
         }
     }
 }

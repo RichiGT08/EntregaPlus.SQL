@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:EntregaPlus.ViewModels"
              x:Class="EntregaPlus.views.EntregasView">
     <ContentPage.BindingContext>
-        <viewmodels: EntregasViewModel/>
+        <viewmodels:EntregasViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout Margin="0,30,0,0">
+        <StackLayout >
             <Label Text="Lista de Entregas Realizadas" FontSize="25"
                   TextColor="Green"
                   HorizontalOptions="CenterAndExpand"/>
-            <ListView ItemsSource="{Binding Entregas}" RowHeight="90">
+            <ListView ItemsSource="{Binding Entregas}" RowHeight="150">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Text="{Binding Codigo}"/>
-                                <Label Text="{Binding Direccion}"/>
+                                <Label Text="{Binding codigo}"/>
+                                <Label Text="{Binding direccion}"/>
                                 <Label Text="{Binding destinatario}"/>
-                                <Label Text="{Binding Ubicacion}"/>
-                                <Label Text="{Binding Estado}"/>
-                                <Label Text="{Binding Observacion}"/>
+                                <Label Text="{Binding ubicacion}"/>
+                                <Label Text="{Binding estado}"/>
+                                <Label Text="{Binding observacion}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

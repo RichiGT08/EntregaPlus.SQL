@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EntregaPlus
+namespace EntregaPlus.views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : MasterDetailPage
+    public partial class ModificarEntrega : ContentPage
     {
-        public MainPage()
+        public ModificarEntrega()
         {
             InitializeComponent();
-            this.Master = new Master();
-            this.Detail = new NavigationPage(new Registro());
-            App.MasterDet = this;
         }
     }
 }

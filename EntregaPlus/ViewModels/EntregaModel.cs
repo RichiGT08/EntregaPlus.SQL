@@ -24,7 +24,7 @@ namespace EntregaPlus.ViewModels
             {
                 return new Command(() =>
                 {
-                    this.repo.InsertarEntrega (this.entrega.Codigo, entrega.Direccion, entrega.destinatario, entrega.ubicacion, entrega.Estado, entrega.Observacion);
+                    this.repo.InsertarEntrega (this.entrega.codigo, entrega.direccion, entrega.destinatario, entrega.ubicacion, entrega.estado, entrega.observacion);
                     
                 });
             }
@@ -36,7 +36,7 @@ namespace EntregaPlus.ViewModels
             {
                 return new Command(() =>
                 {
-                    this.repo.ModificarEntrega(this.entrega.Codigo, entrega.Direccion, entrega.destinatario, entrega.ubicacion, entrega.Estado, entrega.Observacion);
+                    this.repo.ModificarEntrega(this.entrega.codigo, entrega.direccion, entrega.destinatario, entrega.ubicacion, entrega.estado, entrega.observacion);
                 });
             }
         }
@@ -47,7 +47,7 @@ namespace EntregaPlus.ViewModels
             {
                 return new Command(() =>
                 {
-                    this.repo.EliminarEntrega(this.entrega.Codigo);
+                    this.repo.EliminarEntrega(this.entrega.codigo);
                 });
             }
         }

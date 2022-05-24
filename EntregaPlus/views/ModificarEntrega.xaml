@@ -1,33 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EntregaPlus.views.EliminarEntrega">
+             x:Class="EntregaPlus.views.ModificarEntrega">
     <ContentPage.Content>
         <StackLayout Margin="0,30,0,0">
-            <Label Text="ELIMINAR ENTREGA"
+            <Label Text="MODIFICANDO ENTREGA"
                    TextColor="Red"
                    FontSize="30"
                    HorizontalOptions="CenterAndExpand" />
-
-            <Entry Text="{Binding entrega.codigo}" Placeholder="codigo"
+            <Label Text="{Binding entrega.codigo}" 
                    HorizontalOptions="FillAndExpand"/>
 
-            <Entry Text="{Binding entrega.direccion}" Placeholder="Direccion"
+            <Entry Text="{Binding entrega.direccion }" Placeholder="Direccion"
                    HorizontalOptions="FillAndExpand"/>
-            
-            <Entry Text="{Binding entrega.destinatario}" Placeholder="Destinaratio"
+
+            <Entry Text="{Binding entrega.destinatario }" Placeholder="Destionatario"
                    HorizontalOptions="FillAndExpand"/>
-            
+
             <Entry Text="{Binding entrega.ubicacion}" Placeholder="Ubicacion"
                    HorizontalOptions="FillAndExpand"/>
             <Entry Text="{Binding entrega.estado}" Placeholder="Estado"
                    HorizontalOptions="FillAndExpand"/>
-            <Entry Text="{Binding entrega.observacion}" Placeholder="Observacion"
+
+            <Entry Text="{Binding entrega.observacion }" Placeholder="Observacion"
                    HorizontalOptions="FillAndExpand"/>
 
-            <Button Text="ELIMINAR" HorizontalOptions="FillAndExpand"
-                    Command="{Binding EliminarEntrega}"
-                    TextColor="Red"/>
+            <Button Text="MODIFICAR" HorizontalOptions="FillAndExpand"
+                    Command="{Binding ModificarRaza}"/>
 
         </StackLayout>
     </ContentPage.Content>
